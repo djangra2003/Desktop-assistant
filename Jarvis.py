@@ -185,8 +185,3 @@ if __name__ == "__main__":
         elif 'open history' in query:
             pyautogui.hotkey('ctrl','h')
 
-        elif 'search' in query:
-            query=query.replace("google search","")
-            pyautogui.hotkey('alt','d')
-            pyautogui.write(f"{query}",0.1)
-            pyautogui.press('enter')
